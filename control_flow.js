@@ -23,4 +23,4 @@ switch (gradeLetter) {
     gradeNumber = "Invalid grade";
 }
 
-console.log(gradeNumber); // November
+console.log(gradeNumber); // 4
