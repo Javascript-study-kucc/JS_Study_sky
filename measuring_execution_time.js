@@ -2,6 +2,7 @@
 let sum = 0;
 
 console.time("calculatingTime");
+
 for (var i = 1; i <= 1000000; i++) {
   sum += i;
 }
