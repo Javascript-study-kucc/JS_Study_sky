@@ -33,10 +33,10 @@ function game() {
   ctx.fillStyle = "black";
   ctx.fillRect(0, 0, canv.width, canv.height);
 
-  ctx.fillStyle = "lime";
+  ctx.fillStyle = "blue";
   for (var i = 0; i < trail.length; i++) {
     ctx.fillRect(trail[i].x * gs, trail[i].y * gs, gs - 2, gs - 2);
-    // 꼬리 밝으면 초기화
+    // 꼬리 밟으면 초기화
     if (trail[i].x == px && trail[i].y == py) {
       tail = tailLength;
     }
@@ -55,9 +55,9 @@ function game() {
   ctx.fillStyle = "red";
   ctx.fillRect(ax * gs, ay * gs, gs - 2, gs - 2);
 }
-function keyPush(evt) {
+function keyPush(event) {
   // 방향키의 아스키 코드는 왼쪽, 위, 오른쪽, 아래 순선대로 37~40
-  switch (evt.keyCode) {
+  switch (event.keyCode) {
     case 37:
       xv = -1;
       yv = 0;
