@@ -25,6 +25,12 @@ console.log(haneul.name);
 // 동적으로 키의 밸류를 받아와야 할 때 사용
 console.log(haneul["name"]);
 
+function printValue(obj, key) {
+  console.log(obj.key);
+  console.log(obj[key]);
+}
+printValue(haneul, "name"); // undefined, Haneul
+
 // 3. Property value shorthand
 const person1 = { name: "aa", age: 1 };
 const person2 = { name: "bb", age: 2 };
